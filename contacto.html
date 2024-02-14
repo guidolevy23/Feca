@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Web, uade , argentina , diseño, cafe, FECA, festival de cafe, festival, grano de cafe, cafe de especialidad, leche, cafe con leche, taza, plaza, evento de cafe, evento, espuma, cafe frio, panaderia, cafeteria">
+    <meta name="description" content="este es un sitio web para la materia de diseño y desarrolllo web de uade. ">
+
+    <script src="https://kit.fontawesome.com/2b13fecf5c.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./Fotos/feca.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="estilos.css">
+    <title>FECA Festival</title>
+</head>
+<body>
+    <header >
+            <div class="caja">
+                <img src="./Fotos/feca.webp" alt="logo FECA">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" >INICIO</a></li>
+                    <li><a href="marcas.html">MARCAS</a></li>
+                    <li><a href="eventos.html">EVENTOS</a></li>
+                    <li><a href="contacto.html" class="resaltado">CONTACTO</a></li>
+                </ul>
+            </nav>
+    </header>
+    <section class="vidriera" id="contacto">
+        <h1>CONTACTO</h1>
+    </section>
+    <section class="formulario">
+        <h3>Contactanos</h3>
+        <p>
+            ¿Tienes alguna pregunta o sugerencia? Estamos aquí para ayudarte. No dudes en ponerte en contacto con nosotros para obtener más información sobre el Festival de Café de Diciembre 2023. Si eres un expositor interesado en participar o un entusiasta del café que desea saber más, nuestro equipo estará encantado de responderte. Puedes contactarnos por correo electrónico, teléfono o completando el formulario de contacto a continuación. ¡Esperamos escucharte y esperamos verte en nuestro evento!
+        </p>
+        <p>
+            Si deseas ponerte en contacto con nosotros, por favor completa la siguiente información de contacto:
+        </p>
+        <form action="envio.php" method="post" class="contacto">
+            <div class="renglon">
+                <div class="label">
+                    <label for="nombre">Nombre y Apellido</label>
+                </div>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre completo">
+            </div>
+            <div class="renglon">
+                <div class="label">
+                    <label for="telefono">Numero de telefono</label>
+                </div>
+                <input type="text" name="telefono" id="telefono" placeholder="Telefono">
+            </div>
+            <div class="renglon">
+                <div class="label">
+                    <label for="dni">DNI</label>
+                </div>
+                <input type="text" name="dni" id="dni" placeholder="DNI">
+            </div>
+            <div class="renglon">
+                <div class="label">
+                    <label for="email">Email</label>
+                </div>
+                <input type="Email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="renglon">
+                <div class="label">
+                    <label for="motivo">Motivo</label>
+                </div>
+                <textarea name="motivo" id="motivo" cols="30" rows="10" placeholder="Escribenos un mensaje"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6162.217954673344!2d-58.41618419293329!3d-34.57795048586052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb577d3770a7b%3A0xae76d68f246e3bac!2sPlaza%20Intendente%20Seeber!5e0!3m2!1ses-419!2sar!4v1700423256534!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="mapa con la ubicacion de la plaza" alt="mapa de la ubicacion de la plaza donde es el evento"></iframe>
+            <div class="info">
+                <p>Telefono: 01147891200</p>
+                <p>Direccion: Av. Libertador y Av. Sarmiento, CABA</p>
+                <a href="http://www.buenosaires.gob.ar/">http://www.buenosaires.gob.ar/</a>
+                <p>Plaza arbolada con pérgola de piedra, esculturas de ciervos y una estatua del General Juan Manuel de Rosas.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="newsletter">
+        <div id="text">
+            <h2>Suscríbete a nuestro newsletter</h2>
+        </div>
+        <form action="envio.php" method="get">
+            <input type="email" name="correo" placeholder="Tu Email...">
+            <button type="submit" class="btn">Suscríbete</button>
+        </form>
+    </section>
+    <footer>
+        <img class="uade" src="./Fotos/uade_una_gran_universidad.webp" alt="Logo UADE">
+        <div class="info">
+            <h3>Guido Levy, Augusto Peralta, Lucca Napolitano</h3>
+            <p>Tecnicatura Universitaria en Desarrollo de Software, UADE 2023&copy; 26/07</p>
+            <p>Ayala Velarde David Ernesto</p>
+        </div>
+        <div class="redes">
+            <a class="red" href="https://www.facebook.com/GCBA/?locale=es_LA" target="_blank">
+                <i class="fa-brands fa-facebook" aria-label="Facebook"></i>
+            </a>
+            <a class="red" href="https://www.instagram.com/buenosaires/?hl=es-la" target="_blank">
+                <i class="fa-brands fa-instagram" aria-label="Instagram"></i>
+            </a>
+            <a class="red" href="https://twitter.com/gcba?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                <i class="fa-brands fa-twitter" aria-label="Twitter"></i>
+            </a>
+            <a class="red" href="https://www.tiktok.com/" target="_blank">
+                <i class="fa-brands fa-tiktok" aria-label="TikTok"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

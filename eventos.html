@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Web, uade , argentina , diseño, cafe, FECA, festival de cafe, festival, grano de cafe, cafe de especialidad, leche, cafe con leche, taza, plaza, evento de cafe, evento, espuma, cafe frio, panaderia, cafeteria">
+    <meta name="description" content="este es un sitio web para la materia de diseño y desarrolllo web de uade. ">
+
+    <script src="https://kit.fontawesome.com/2b13fecf5c.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./Fotos/feca.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="estilos.css">
+    <title>FECA Festival</title>
+</head>
+
+<body>
+    <header>
+        <div class="caja">
+            <img src="./Fotos/feca.webp" alt="logo FECA">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="marcas.html">MARCAS</a></li>
+                <li><a href="eventos.html" class="resaltado">EVENTOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="vidriera" id="eventos">
+        <h1>EVENTOS</h1>
+    </section>
+    <section class="contenedor-ev">
+        <div class="content">
+            <div class="texto">
+                <h2>Mercado de café</h2>
+                <p>¿Qué te parece pasear y elegir entre 35 puestos de distintos tipos de cafés, de barrio y de especialidad
+                    de la Ciudad, además de 8 propuestas de diferentes partes de la Argentina.
+                    Además, por primera vez en FECA, el público tendrá la posibilidad de votar al Mejor Café, para lo cual
+                    deberán acercarse a los puestos de café y las mesas distribuidas, escanear un código QR y elegir el que
+                    consideren su café favorito del festival. El ganador será premiado al finalizar la jornada del domingo.
+                </p>
+            </div>
+    
+            <div class="texto">
+                <h2>Patio Gastronómico</h2>
+                <p>Vas a encontrar siete puestos de venta, para elegir la mejor manera de acompañar al café. Las propuestas
+                    que se sumarán al evento serán: Carne, Menta y Limón, Moisha, Panadería Artiaga, Tacos Zapata, 13 Perros
+                    y Urban Jazz Pizza.</p>
+            </div>
+    
+            <div class="texto">
+                <h2>Agenda artística</h2>
+                <p>Durante ambos días, habrá música en vivo a cargo de solistas, dúos y tríos, con diferentes estilos
+                    como:
+                    jazz; chillout; música de los 30´; ritmos de bossa nova; boleros y chachachas; tangos y milongas;
+                    blues;
+                    soul; y swing, entre otros.</p>
+            </div>
+    
+            <div class="texto">
+                <h2>Auditorio</h2>
+                <p>A su vez, se montará un espacio de auditorio donde, durante los dos días de la feria, se darán
+                    charlas en vivo, talleres y diversas actividades</p>
+            </div>
+    
+        </div>
+        
+        <div id="carousel-container">
+            <div id="carousel">
+                <!-- Slides de imágenes -->
+                <div class="carousel-item"><img src="Fotos/IMG-9001.webp" alt="Cronograma de eventos 1"></div>
+                <div class="carousel-item"><img src="Fotos/IMG-9002.webp" alt="Talleres para hacer"></div>
+                <div class="carousel-item"><img src="Fotos/IMG-8999.webp" alt="Cronograma de eventos 2"></div>
+                <div class="carousel-item"><img src="Fotos/auditorio.webp" alt="foto del Auditorio"></div>
+            </div>
+    
+            <!-- Flechas de navegación -->
+            <div class="arrow prev" onclick="prevSlide()">&#9665;</div>
+            <div class="arrow next" onclick="nextSlide()">&#9655;</div>
+        </div>
+
+        
+    </section>
+    <section class="video">
+        <iframe  src="https://www.youtube.com/embed/hWJ8yXhquRE?si=ekybkhJryo913dZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+    <aside class="prox">
+        <hr>
+        <h2>Próximamente, información sobre la edición 2024</h2>
+        <hr>
+    </aside>
+    <section id="newsletter">
+        <div id="text">
+            <h2>Suscríbete a nuestro newsletter</h2>
+        </div>
+        <form action="envio.php" method="get">
+            <input type="email" name="correo" placeholder="Tu Email...">
+            <button type="submit" class="btn">Suscríbete</button>
+        </form>
+    </section>
+
+    <footer>
+        <img class="uade" src="./Fotos/uade_una_gran_universidad.webp" alt="Logo UADE">
+        <div class="info">
+            <h3>Guido Levy, Augusto Peralta, Lucca Napolitano</h3>
+            <p>Tecnicatura Universitaria en Desarrollo de Software, UADE 2023&copy; 26/07</p>
+            <p>Ayala Velarde David Ernesto</p>
+        </div>
+        <div class="redes">
+            <a class="red" href="https://www.facebook.com/GCBA/?locale=es_LA" target="_blank">
+                <i class="fa-brands fa-facebook" aria-label="Facebook"></i>
+            </a>
+            <a class="red" href="https://www.instagram.com/buenosaires/?hl=es-la" target="_blank">
+                <i class="fa-brands fa-instagram" aria-label="Instagram"></i>
+            </a>
+            <a class="red" href="https://twitter.com/gcba?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                <i class="fa-brands fa-twitter" aria-label="Twitter"></i>
+            </a>
+            <a class="red" href="https://www.tiktok.com/" target="_blank">
+                <i class="fa-brands fa-tiktok" aria-label="TikTok"></i>
+            </a>
+        </div>
+    </footer>
+
+
+<script>
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        const carousel = document.getElementById('carousel');
+        const totalSlides = document.querySelectorAll('.carousel-item').length;
+
+        if (index < 0) {
+            currentIndex = totalSlides - 1;
+        } else if (index >= totalSlides) {
+            currentIndex = 0;
+        } else {
+            currentIndex = index;
+        }
+
+        const newPosition = -currentIndex * 100 + '%';
+        carousel.style.transform = 'translateX(' + newPosition + ')';
+    }
+
+    function nextSlide() {
+        showSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+        showSlide(currentIndex - 1);
+    }
+</script>
+</body>
+
+</html>
